@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin:0;
+}
+:root {
+    --primary-color: #302634;
+    --secondary-color: #109fe9;
+    --third-color: #1e59b3;
+    --accent-color: #0fa22f;
+    --color-oscuro: #201923;
+    --color-fondo: #f6e7f8;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Principal';
+    src: url('../public/Assets/Fonts/Mada-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Segundaria';
+    src: url('../public/Assets/Fonts/mytupi.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@media (width <=768px) {
+    .cabecera{
+        display: none;
+    }
+    .Menu{
+        display: none;
+    }
+    .todo{
+        padding: 0 1rem !important;
+    }
+}
+body {
+    font-family: 'Principal';
+}
+p{
+    font-family: 'Segundaria';
+    font-size: 12pt;
+}
+.todo{
+    background-color: var(--color-fondo);
+    height: 100%;
+    padding-top: 80px;
+    margin: 0;
+    padding-left: 8.3%;
+}
